@@ -4,7 +4,7 @@ A Next.js application for discovering books using the Open Library API. Search f
 
 ## Live Demo
 
-[Book Discovery](https://book-discovery-app-nextjs-mjlex7iqt-laiba-arshad.vercel.app/)
+[Book Discovery](https://book-discovery-app-nextjs-246os8ycy-laiba-arshad.vercel.app/)
 
 ## Features
 
@@ -20,7 +20,7 @@ A Next.js application for discovering books using the Open Library API. Search f
 
 ## Tech Stack
 
-Next.js 16 · React 19 · JavaScript · App Router · Tailwind CSS · Open Library API · Vercel AI SDK · OpenCode Zen · localStorage
+Next.js 16 · React 19 · JavaScript · App Router · Tailwind CSS · Open Library API · Vercel AI SDK · OpenRouter · localStorage
 
 ## Routes
 
