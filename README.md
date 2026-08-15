@@ -128,6 +128,39 @@ The AI assistant is configured with a system prompt focused on book discovery, r
 
 The AI provider API key is stored in the OPENCODE_ZEN_API_KEY environment variable and is never exposed to the client.
 
+### FE-07 Server-Side Tool: `searchBooks`
+
+A server-side tool that the AI assistant can call to search Open Library for books matching the user's query. Input validation is handled with Zod.
+
+**Tool name:** `searchBooks`
+
+**Purpose:** Searches Open Library for books matching the user's query.
+
+**Input schema (Zod-validated):**
+
+```json
+{
+  "query": "string"
+}
+```
+
+**Return shape:**
+
+```json
+{
+  "query": "string",
+  "results": [
+    {
+      "id": "string",
+      "title": "string",
+      "authors": ["string"],
+      "firstPublishYear": "number | null",
+      "coverUrl": "string | null"
+    }
+  ]
+}
+```
+
 ## How AI Helped
 
 AI assisted with planning the Vite → Next.js migration, App Router structure, architecture decisions, incremental feature implementation, API integration, responsive design, debugging, streaming AI integration, and code/build verification. All output was reviewed, tested, and validated before being accepted — AI was used as a coding partner, not a replacement for review.
